@@ -1,0 +1,107 @@
+/* Paleta de cores: #d62828 (vermelho) e #1a1a1a (preto) */
+:root {
+    --vermelho-principal: #d62828;
+    --preto-fundo: #1a1a1a;
+    --cinza-escuro: #2b2b2b;
+    --texto-claro: #f0f0f0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: var(--preto-fundo);
+    color: var(--texto-claro);
+}
+
+/* Utilitários para o estilo */
+.bg-vermelho {
+    background-color: var(--vermelho-principal) !important;
+}
+
+.text-vermelho {
+    color: var(--vermelho-principal) !important;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff;
+    background-color: #a31f1f;
+    border-radius: 5px;
+}
+
+/* Main content */
+.container {
+    background-color: var(--cinza-escuro);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+h1, h2, h3, h4 {
+    color: var(--vermelho-principal);
+}
+
+/* Carousel (ajustado para mostrar a imagem inteira) */
+.carousel-item img {
+    /* Removido o height fixo */
+    max-height: 400px;
+    width: auto; /* A largura se ajusta automaticamente para manter a proporção */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+    object-fit: contain; /* Garante que a imagem inteira seja visível */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+
+/* Cards */
+.card {
+    border: none;
+    background-color: var(--preto-fundo);
+    color: var(--texto-claro);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Tabela */
+.table-dark {
+    --bs-table-bg: var(--preto-fundo);
+    --bs-table-color: var(--texto-claro);
+    --bs-table-striped-bg: #343a40;
+    border-radius: 10px;
+}
+
+/* Formulário de Pedido */
+.form-check-input:checked {
+    background-color: var(--vermelho-principal);
+    border-color: var(--vermelho-principal);
+}
+
+.btn-primary {
+    background-color: var(--vermelho-principal);
+    border-color: var(--vermelho-principal);
+}
+
+.btn-primary:hover {
+    background-color: #a31f1f;
+    border-color: #a31f1f;
+}
+
+#qrcode-container {
+    background-color: var(--preto-fundo);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
