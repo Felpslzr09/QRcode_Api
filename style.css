@@ -105,3 +105,53 @@ h1, h2, h3, h4 {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
+.modal-backdrop.show {
+    opacity: 0.85; 
+}
+
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background-color: #d62828;
+    color: #fff;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.modal-body {
+    font-size: 1.1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.modal-footer {
+    border-top: none;
+    padding-top: 0;
+    justify-content: center;
+}
+
+.btn-secondary {
+    background-color: #a71313;
+    border-color: #cf2121;
+}
+
+.btn-secondary:hover {
+    background-color: #0f1113;
+    border-color: #0b0c0e;
+}
+
+.btn-close {
+    filter: invert(1);
+}
+.modal-body{
+
+    color: #060607;
+}
